@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">Lucas Sartor</a>
+    <ul class="navbar-nav mr-auto">
+        <% if (route == 'home') { %>
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+        <% } else { %>
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+        <% } %>
+
+        <% if (route == 'projects') { %>
+            <li class="nav-item active">
+                <a class="nav-link" href="/projects">Projetos</a>
+            </li>
+        <% } else { %>
+            <li class="nav-item">
+                <a class="nav-link" href="/projects">Projetos</a>
+            </li>
+        <% } %>
+    </ul>
+</nav>

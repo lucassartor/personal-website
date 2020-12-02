@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+    <%- include('../../partials/header', {route: 'projects'}); %>
+</header>
+
+<main>
+    <body>
+    <div class="card card-outline-secondary">
+        <div class="card-body">
+            <% projects.forEach((project) => { %>
+                <li>
+                    <strong><%= project.name %></strong>
+                    <p><%= project.description %></p>
+                </li>
+            <% }); %>
+
+            <form action="/projects/new">
+                <button type="submit" class="btn btn-success">Novo Projeto</button>
+            </form>
+        </div>
+    </div>
+    </body>
+</main>
+
+<footer>
+    <%- include('../../partials/footer'); %>
+</footer>
+
+</body>
+</html>
