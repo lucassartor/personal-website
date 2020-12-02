@@ -25,7 +25,7 @@ router.post('/add', (req, res) => {
         website: req.body.website,
         repo: req.body.repo,
         technologies: req.body.technologies,
-        images: req.body.images,
+        image: req.body.image,
     };
 
     new Project(newProject).

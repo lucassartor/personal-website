@@ -5,9 +5,6 @@
 </head>
 <body class="container">
 
-<header>
-    <%- include('../../partials/header', {route: 'projects'}); %>
-</header>
 
 <main>
     <body>
@@ -45,6 +42,18 @@
                         </div>
                     </div>
                     <div class="form-group row">
+                        <label class="col-lg-3 col-form-label form-control-label">Tipo</label>
+                        <div class="col-lg-9">
+                            <input class="form-control" type="text" name="type" id="type">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-3 col-form-label form-control-label">Imagem path</label>
+                        <div class="col-lg-9">
+                            <input class="form-control" type="text" name="image" id="image">
+                        </div>
+                    </div>
+                    <div class="form-group row">
                         <label class="col-lg-3 col-form-label form-control-label"></label>
                         <div class="col-lg-9">
                             <button type="submit" class="btn btn-success">Criar Projeto</button>
@@ -55,10 +64,6 @@
         </div>
     </body>
 </main>
-
-<footer>
-    <%- include('../../partials/footer'); %>
-</footer>
 
 </body>
 </html>
