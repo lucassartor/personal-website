@@ -1,0 +1,18 @@
+<div class="row project-card" data-toggle="modal" data-target="#portfolioModal" data-portfolio-tag="<%= project.type %>">
+    <div class="col-md-6 col-lg-5 project-card__img">
+        <img class="" src="<%= project.image %>" alt="project-img">
+    </div>
+    <div class="col-md-6 col-lg-7 project-card__info">
+        <h3 class="project-card__title"><%= project.name %></h3>
+        <p class="project-card__description">
+            <%= project.description %>
+        </p>
+        <p class="project-card__stack">Used stack:</p>
+        <ul class="tags">
+            <li>html5</li>
+            <li>css3</li>
+            <li>JavaScript</li>
+        </ul>
+        <a href="" class="project-card__link"><% project.website %></a>
+    </div>
+</div>

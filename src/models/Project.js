@@ -13,6 +13,9 @@ const ProjectSchema = mongoose.Schema({
     website: {
         type: String
     },
+    type: {
+        type: String
+    },
     repo: {
         type: String
     },

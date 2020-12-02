@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 app.set('view engine', 'ejs');
 app.set("views", "./src/views");
 
-app.use(express.static(path.join(__dirname,"public")));
+app.use(express.static(path.join(__dirname,"/public/")));
 
 //Rotas
 app.use(index);

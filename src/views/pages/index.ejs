@@ -1,24 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <%- include('../partials/head'); %>
-</head>
-<body class="container">
+<%- include('../partials/head'); %>
+<body>
+<%- include('../partials/menu'); %>
+<%- include('../partials/header'); %>
 
-<header>
-    <%- include('../partials/header', {route: 'home'}); %>
-</header>
-
-<main>
-    <div class="jumbotron">
-        <h1>Olá! Sou o Lucas Sartor 🤯</h1>
-        <p>O mais chave</p>
+<!--Hello-->
+<section id="hello" class="container section">
+    <div class="row">
+        <div class="col-md-10">
+            <h2 id="hello_header" class="section__title">Hi_</h2>
+            <p class="section__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+            <a href="" class="section_btn site-btn"><img src="assets/img/img_btn_icon.png" alt="">Download CV</a>
+        </div>
     </div>
-</main>
+</section>
+<!--Hello-->
 
-<footer>
-    <%- include('../partials/footer'); %>
-</footer>
+<hr>
+
+<!--Resume-->
+<section id="resume" class="container section">
+    <div class="row">
+        <div class="col-md-10">
+            <h2 id="resume_header" class="section__title">Resume_</h2>
+            <p class="section__description">
+                Lorem ipsum dolor sit amet, <i><b>communication</b></i> adipisicing elit, <i><b>helpful</b></i> eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <i><b>sence of
+                        humour</b></i> ullamco laboris nisi ut <i><b>honest</b></i> ea commodo consequat. Duis aute
+                irure dolor
+                in
+                upper-intermediate english level velit dolore eu ivivdtevoluptatem ontend developer.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 section__resume resume-list">
+            <h3 class="resume-list_title">education</h3>
+            <div class="resume-list__block">
+                <p class="resume-list__block-title">University of São Paulo</p>
+                <p class="resume-list__block-date">2020 - 2024</p>
+                <p>
+                    Bachelor of Information Systems
+                </p>
+            </div>
+            <div class="resume-list__block">
+                <p class="resume-list__block-title">School of Informational technologies</p>
+                <p class="resume-list__block-date">2004 - 2005</p>
+                <p>
+                    Awesome student, lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eius-
+                    mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 section__resume resume-list">
+            <h3 class="resume-list_title">employment</h3>
+            <div class="resume-list__block">
+                <p class="resume-list__block-title">Apple</p>
+                <p class="resume-list__block-date">2006 - 2010</p>
+                <p>
+                    Senior Full Stack Developer
+                </p>
+            </div>
+            <div class="resume-list__block">
+                <p class="resume-list__block-title">Tech university</p>
+                <p class="resume-list__block-date">2004 - 2005</p>
+                <p>
+                    Awesome developer, lorem ipsum dolor sit amet, conse ctetur adipisicing elit, sed do eius-
+                    mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                </p>
+            </div>
+            <div class="resume-list__block">
+                <p class="resume-list__block-title">Molly’s studio</p>
+                <p class="resume-list__block-date">2003 - 2006</p>
+                <p>
+                    Programmer Lorem ipsum dolor sit amet, consecte tur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row section__resume progress-list js-progress-list">
+        <div class="col-md-12">
+            <h3 class="progress-list__title">general skills</h3>
+        </div>
+        <div class="col-md-5 mr-auto">
+            <div class="progress-list__skill">
+                <p>
+                    <span class="progress-list__skill-title">html5</span>
+                    <span class="progress-list__skill-value">80%</span>
+                </p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                         aria-valuemax="100">
+                    </div>
+                </div>
+            </div>
+            <div class="progress-list__skill">
+                <p>
+                    <span class="progress-list__skill-title">css3</span>
+                    <span class="progress-list__skill-value">70%</span>
+                </p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                         aria-valuemax="100">
+                    </div>
+                </div>
+            </div>
+            <div class="progress-list__skill">
+                <p>
+                    <span class="progress-list__skill-title">java script</span>
+                    <span class="progress-list__skill-value">90%</span>
+                </p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                         aria-valuemax="100">
+                    </div>
+                </div>
+            </div>
+            <div class="progress-list__skill">
+                <p>
+                    <span class="progress-list__skill-title">mongodb</span>
+                    <span class="progress-list__skill-value">80%</span>
+                </p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                         aria-valuemax="100">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 mr-auto">
+            <div class="progress-list__skill">
+                <p>
+                    <span class="progress-list__skill-title">react native</span>
+                    <span class="progress-list__skill-value">80%</span>
+                </p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                         aria-valuemax="100">
+                    </div>
+                </div>
+            </div>
+            <div class="progress-list__skill">
+                <p>
+                    <span class="progress-list__skill-title">nodejs</span>
+                    <span class="progress-list__skill-value">60%</span>
+                </p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                         aria-valuemax="100">
+                    </div>
+                </div>
+            </div>
+            <div class="progress-list__skill">
+                <p>
+                    <span class="progress-list__skill-title">nextjs</span>
+                    <span class="progress-list__skill-value">90%</span>
+                </p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                         aria-valuemax="100">
+                    </div>
+                </div>
+            </div>
+            <div class="progress-list__skill">
+                <p>
+                    <span class="progress-list__skill-title">react</span>
+                    <span class="progress-list__skill-value">80%</span>
+                </p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                         aria-valuemax="100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Resume-->
+
+<!--Portfolio-->
+<section id="portfolio" class="container section">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 id="portfolio_header" class="section__title">My projects_</h2>
+        </div>
+    </div>
+    <div class="row portfolio-menu">
+        <div class="col-md-12">
+            <nav>
+                <ul>
+                    <li><a href="" data-portfolio-target-tag="all">all</a></li>
+                    <li><a href="" data-portfolio-target-tag="mobile apps">mobile apps</a></li>
+                    <li><a href="" data-portfolio-target-tag="web-sites">web-sites</a></li>
+                    <li><a href="" data-portfolio-target-tag="landing-pages">landing pages</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="portfolio-cards">
+        <% projects.forEach((project) => { %>
+            <%- include('../partials/project', {project}); %>
+        <%
+        }); %>
+
+    </div>
+</section>
+<!--Portfolio-->
+
+<%- include('../partials/footer'); %>
 
 </body>
 </html>

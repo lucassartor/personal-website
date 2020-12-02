@@ -5,18 +5,20 @@
   "main": "src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon ./src/server.js"
+    "dev": "nodemon ./src/server.js",
+    "scss": "node-sass --include-path sass src/public/scss/main.scss src/public/css/main.css"
   },
   "author": "Lucas Sartor",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "latest",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "mongoose": "^5.11.1",
-    "nodemon": "^2.0.6",
-    "body-parser": "latest"
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.6"
   },
   "devDependencies": {}
 }
